@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW-Switch statement</title>
+</head>
+<body>
+
+    <script>
+    const foo = 8;
+    switch(foo){
+       case -1:
+        console.log("negative 1");
+        break;
+       case 0://value of foo matchs this criteria ;execution starts from here
+        console.log("Zero - 0");
+        //Forgotthen break! Execution falls through
+       case 1://no break statement in case '0': so this case will run a well
+        console.log("positive 1");
+        break;//Break encountered; will not continue into 'case 2:'
+       case 2:
+        console.log("positive 2");
+        break;
+       default:
+        console.log("default");
+        //logs 0 and 1
+    }
+   </script>
+</body>
+</html>
