@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-4 Problem Set</title>
+</head>
+<body>
+<script>
+let str = "Har\""
+console.log(str.length)
+
+// Problem 1
+
+const sentence = 'THe quick brown fox jumps over the lazy dog';
+const word = 'fox';
+console.log(`The word "${word}" ${sentence.includes(word) ? 'is' :'is not'} in the sentence`);
+
+
+//Problem 2
+const str1 = 'cats are the best!';
+
+console.log(str1.endsWith('best!'));
+//excepted output is true
+
+console.log(str1.endsWith('best!',17));
+//excepted output is true
+
+const str2 = 'Is this a question?';
+
+console.log(str2.endsWith('question?'));
+
+//Problem 3 - WAP TO MAKE A STRING LOWERCASE
+console.log(word.toLowerCase())
+console.log(word.toUpperCase())
+
+
+//Problem -4 Extract the amount out of this string
+// "Please give Rs 1000"
+let string = "Please give Rs 1000"
+let amount = str2.slice(15)
+console.log(amount)
+console.log(string.slice(15));
+console.log(typeof amount)
+
+
+//Problem 5- Try to change the 4th charater if a given string Were you are able to do it!?
+
+let friend5 = "Deepika"
+friend[3] = "R"
+console.log(friend) //Friend not changed , because string is immutable
+</script>
+</body>
+</html>
