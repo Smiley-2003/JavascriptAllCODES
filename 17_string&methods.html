@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Literal</title>
+</head>
+<body>
+<script>
+    //Template Literal
+    let nam = prompt("Enter your name?")
+    let sentence = `This name is ${nam}`
+    console.log(sentence)
+
+    let name = "Harry"
+    console.log(name.length)
+
+    let boy = 'Prakash'
+    console.log(boy)
+
+    let myfriend = "Shubh"
+    console.log(myfriend)
+
+    //Template Literals
+    let boy1 = "Pramod"
+    let boy2 = "Nikhil"
+    // Nikhil is friend of Pramod
+    let sentence1 = `${boy1} is friend of ${boy2}`
+    console.log(sentence1)
+
+    //Escape Sequence Characters
+    let fruit = 'Banan \na'
+    console.log(fruit.length)
+
+    let name1 = "PerryPerry\""
+    console.log(name.length)
+
+    console.log(name.toUpperCase())
+    console.log(name.toLowerCase())
+    console.log(name.slice(2,4))
+    console.log(name.slice(2))
+    console.log(name.replace("Har","Per"))
+
+    let friend1 = "Harry"
+    let friend2 =  "Naman"
+    let friend3 = friend1.concat(friend2," yes ")
+    console.log(friend3)
+    //We can even use + operator
+
+    let name2 = "Naina-----------------------                       "
+    let newName = name2.trim()
+    console.log(newName)
+    //Removes whitespaces
+
+    //Strings are immutable 
+    // let actress = "Deepika"
+    // let actress[0] = "A"
+    // console.log(actress)
+    // console.log(actress[0])
+
+    let friend = "Naman"
+    console.log(name.concat(" is a friend of ",friend," OK "))
+    let friend4 = "      Meena    "
+    console.log(friend4)
+    console.log(friend4.trim())
+
+    let fr = "Shivika" + "Harry"+"Raman";
+    console.log(fr[0])
+    console.log(fr[1])
+    console.log(fr[2])
+    console.log(fr[3])
+    // fr[4] = "o"
+    console.log(fr)
+
+    //Quick : Use a for loop to print the string
+
+
+</script>
+</body>
+</html>
