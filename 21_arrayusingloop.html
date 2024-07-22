@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Loops in Arrays</title>
+</head>
+<body>
+<script>
+    let num=[1, 2, 3, 4, 5, 6, 7, 8, 9]
+    console.log(num.length)
+    delete num[0]
+    console.log(num)
+    //even after deleting array length is same that is 9
+    console.log(num.length)
+
+    //concat method
+    let num_1=[1, 2, 3, 4, 5, 6, 7, 8, 9]
+    let num_more=[11, 12, 13, 14, 15, 16, 17, 18, 19]
+    let num_even_more=[211, 212, 213, 214, 215, 216, 217, 218, 219]
+    let newArray = num.concat(num_more,num_even_more)
+    console.log(newArray)
+    console.log(num, num_more)
+
+    //sort()
+    let num1=[551,22,,222222,3,344,14,5,554,667,889]
+    num1.sort()
+    console.log(num1.sort())
+    console.log(newArray.sort())
+
+    //sortmethod
+    //comapre function
+    let compare = (a,b)=>{
+        return a - b
+    }
+    num1.sort(compare)
+    console.log(num1)
+
+    //reverse method
+    num1.reverse()
+    console.log(num1)
+
+    //splice  and slice
+    let numm=[551, 22, 3, 14, 5, 6, 7, 8, 229]
+    numm.splice(2,3,1021,1022,1023,1024,1025)
+    console.log(numm)
+
+    let number = [551 , 22, 3, 14, 5, 6, 7, 8, 229]
+    let deletedValues = num.splice[2, 4, 1021, 1022, 1024, 1025]
+    console.log(deletedValues)
+
+    numm.slice(3)
+    console.log(numm)
+  
+     let newNum = num.slice(3,5)
+     console.log(newNum)
+
+</script>
+</body>
+</html>
